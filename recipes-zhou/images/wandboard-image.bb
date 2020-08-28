@@ -5,7 +5,7 @@ LICENSE = "MIT"
 
 IMAGE_INSTALL = "packagegroup-core-boot ${CORE_IMAGE_EXTRA_INSTALL}"
 
-inherit core-image-minimal
+inherit core-image
 
 CORE_IMAGE_EXTRA_INSTALL = " \
     htop \
