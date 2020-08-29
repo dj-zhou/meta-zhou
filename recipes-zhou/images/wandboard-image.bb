@@ -9,8 +9,8 @@ inherit core-image
 
 CORE_IMAGE_EXTRA_INSTALL = " \
     htop \
+    libev \
 "
-
 # sudo apt-get install fortune cowsay
 # fortune | cowsay -f stegosaurus
 print_logo () {
