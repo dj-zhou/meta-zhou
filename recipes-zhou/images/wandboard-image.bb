@@ -10,6 +10,7 @@ inherit core-image
 CORE_IMAGE_EXTRA_INSTALL = " \
     htop \
     libev \
+    libgpiod-tools \
 "
 # sudo apt-get install fortune cowsay
 # fortune | cowsay -f stegosaurus
