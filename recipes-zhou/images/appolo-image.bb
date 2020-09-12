@@ -8,18 +8,22 @@ IMAGE_INSTALL = "packagegroup-core-boot ${CORE_IMAGE_EXTRA_INSTALL}"
 inherit core-image
 
 CORE_IMAGE_EXTRA_INSTALL = " \
+    boost \
     htop \
     libev \
     libgpiod-tools \
+    yaml-cpp \
 "
+# spdlog   # failed due to dnf problem
+# libeigen # failed due to dnf problem
+
 # sudo apt-get install fortune cowsay
 # fortune | cowsay -f stegosaurus
 print_logo () {
     echo >>${IMAGE_ROOTFS}/etc/issue '
  ___________________________________
 / Life is like a box of chocolates  \
-\                                   /
- -----------------------------------
+\___________________________________/
 \                             .       .
  \                           / `.   ." " 
   \                  .---.  <    > <    >  .---.

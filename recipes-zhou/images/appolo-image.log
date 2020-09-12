@@ -1,0 +1,53 @@
+The log of adding software
+
+1. htop
+ a. bbfile: meta-openembedded/meta-oe/recipes-support/htop/htop_2.2.0.bb
+ b. software location: /usr/bin/htop
+ c. version: 2.2.0
+ d. image size: 11MiB
+ e. no color on htop (does not support escaping), don't know why
+
+2. libev
+ a. bbfile: meta-openembedded/meta-oe/recipes-connectivity/libev/libev_4.33.bb
+ b. software location: /usr/lib/libev.so.4
+ c. version: 4.33
+ b. image size: 14MiB
+ e. 
+
+3. libgpiod-tools
+ a. bbfile: meta-openembedded/meta-oe/recipes-support/libgpiod/libgpiod_1.4.3.bb
+ b. software location:
+        /usr/bin/gpiodetect
+        /usr/bin/gpioinfo
+        /usr/bin/gpioset
+        /usr/bin/gpioget
+        /usr/bin/gpiofind
+        /usr/bin/gpiomon
+        /usr/lib/libgpiod.so.2
+        /usr/lib/libgpiodcxx.so.1.0.4
+        /usr/lib/libgpiodcxx.so.1
+        /usr/lib/libgpiod.so.2.1.3
+ c. version: 1.4.3
+ d. image size: 15MiB
+ e. 
+
+4. yaml-cpp (yaml parser for C++)
+ a. bbfile: meta-zhou/recipes-devtools/yaml-cpp/yaml-cpp_0.6.2.bb
+ b. software location: /usr/lib/libyaml-cpp.so.0.6
+ c. version: 0.6.2
+ d. image size: 15MiB
+
+5. boost
+ a. bbfile: poky/meta/recipes-support/boost/boost_1.72.0.bb
+ b. software location: /usr/lib/libboost_**.so**
+ c. version: 1.72.0
+ d. image size: 30MiB
+
+
+ TO ADD:
+1. libeigen
+    failed: Could not invoke dnf. Command, because the recipe
+        meta-openembedded/meta-oe/recipes-support/libeigen/libeigen_3.3.7.bb
+    uses the bitbucket for its source, need to fix.
+
+2. spdlog
