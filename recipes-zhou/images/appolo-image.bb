@@ -11,8 +11,8 @@ CORE_IMAGE_EXTRA_INSTALL = " \
     boost \
     htop \
     libev \
-    meson \
     libgpiod-tools \
+    meson \
     yaml-cpp \
 "
 # spdlog   # failed due to dnf problem

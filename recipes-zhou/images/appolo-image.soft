@@ -43,8 +43,16 @@ The log of adding software
  c. version: 1.72.0
  d. image size: 30MiB
 
+Tested but not needed:
+1. meson 
+ a. bbfile: poky/meta/recipes-devtools/meson/meson_0.53.2.bb
+ b. software location:
+        /usr/bin/meson
+        /usr/lib/python3.8/site-packages/meson*
+ c. version: 0.53.2
+ d. image size: 48MiB (+ 18MiB)
 
- TO ADD:
+TO ADD:
 1. libeigen
     failed: Could not invoke dnf. Command, because the recipe
         meta-openembedded/meta-oe/recipes-support/libeigen/libeigen_3.3.7.bb
