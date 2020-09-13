@@ -11,6 +11,7 @@ CORE_IMAGE_EXTRA_INSTALL = " \
     boost \
     htop \
     libev \
+    meson \
     libgpiod-tools \
     yaml-cpp \
 "
