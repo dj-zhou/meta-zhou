@@ -1,4 +1,5 @@
 The log of adding software
+The log matches that in Ubuntu 20.04 system.
 
 1. htop
  a. bbfile: meta-openembedded/meta-oe/recipes-support/htop/htop_2.2.0.bb
