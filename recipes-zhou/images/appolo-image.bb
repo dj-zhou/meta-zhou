@@ -10,8 +10,10 @@ inherit core-image
 CORE_IMAGE_EXTRA_INSTALL = " \
     boost \
     htop \
+    iwd \
     libev \
     libgpiod-tools \
+    libiio \
     yaml-cpp \
 "
 # spdlog   # failed due to dnf problem
