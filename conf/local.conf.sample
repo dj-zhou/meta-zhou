@@ -1,8 +1,10 @@
 
 MACHINE ??= "wandboard"
 
-DL_DIR ?= "/home/{HOME}/yocto-shared-download"
-SSTATE_DIR ?= "/home/{HOME}/yocto-shared-sstate-cache"
+
+
+DL_DIR ?= "/home/${HOME}/yocto-shared-download"
+SSTATE_DIR ?= "/home/${HOME}/yocto-shared-sstate-cache"
 DISTRO ?= "poky"
 PACKAGE_CLASSES ?= "package_rpm"
 EXTRA_IMAGE_FEATURES ?= "debug-tweaks"
@@ -29,6 +31,9 @@ INHERIT += "buildhistory"
 BUILDHISTORY_COMMIT = "1"
 BUILDHISTORY_FEATURES = "image"
 # BUILDHISTORY_IMAGE_FILES += "/path/to/file
+
+# just added so buildhistory is happy
+PRSERV_HOST = "localhost:0"
 
 # build statistics ----------------
 # set in USER_CLASSES
