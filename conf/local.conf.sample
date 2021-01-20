@@ -1,10 +1,8 @@
 
-MACHINE ??= "wandboard"
+MACHINE ??= "wandboard-zhou"
 
-
-
-DL_DIR ?= "/home/${HOME}/yocto-shared-download"
-SSTATE_DIR ?= "/home/${HOME}/yocto-shared-sstate-cache"
+DL_DIR ?= "${HOME}/soft/yocto-shared-download"
+SSTATE_DIR ?= "${HOME}/soft/yocto-shared-sstate-cache"
 DISTRO ?= "poky"
 PACKAGE_CLASSES ?= "package_rpm"
 EXTRA_IMAGE_FEATURES ?= "debug-tweaks"
